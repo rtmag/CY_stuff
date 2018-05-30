@@ -177,3 +177,7 @@ perl -pe 's/chr/hs/g'|perl -pe 's/\n/\t10\n/g' >> circos_Simulations/sniffles_si
 circos -conf circos_Simulations/sniffles_sim1/circos.conf -outputfile circos_Simulations/sniffles_sim1/sniffles_sim1
 #
 ####################################################################################################################
+mkdir circos_Simulations/circos_plot
+cp circos_Simulations/*/*svg circos_Simulations/circos_plot
+cp circos_Simulations/*/*png circos_Simulations/circos_plot
+###############
