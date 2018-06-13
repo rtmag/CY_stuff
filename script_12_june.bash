@@ -89,3 +89,25 @@ perl -pe 's/chr/hs/g' simulation/sniffles_sim1/sniff_sim1_insertion_breakpoints.
 perl -pe 's/chr/hs/g' simulation/sniffles_sim1/sniff_sim1_duplication_breakpoints.bed|perl -pe 's/\t(\w+)\t(\w+)\n/\tlabel=$2\n/g' \
 > sniff/data/tandemDuplications.bed
 ##########################################################################################################################
+cd delly
+circos -conf etc/circos.conf
+cd ..
+cd groundtruth
+circos -conf etc/circos.conf
+cd ..
+cd hs
+circos -conf etc/circos.conf
+cd ..
+cd nanosv
+circos -conf etc/circos.conf
+cd ..
+cd novobreak
+circos -conf etc/circos.conf
+cd ..
+cd picky
+circos -conf etc/circos.conf
+cd ..
+cd sniff
+circos -conf etc/circos.conf
+cd ..
+#############################################################################
